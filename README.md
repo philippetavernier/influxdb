@@ -1,8 +1,13 @@
 # influxdb
 
-
-## with CURL
+## Install
+```
+wget https://dl.influxdata.com/influxdb/releases/influxdb2_2.0.3_amd64.deb
+sudo dpkg -i influxdb2_2.0.3_amd64.deb
+```
+## Send Data
+### with CURL
 ```
   curl --request POST "http://localhost:8086/api/v2/write?bucket=bucket-name&org=org-name" --header "Authorization: Token token-key" \
- --data-raw "temperature_in_room,room=kitchen temp=24.2"
+ --data-raw "YOUR DATA"
 ```
