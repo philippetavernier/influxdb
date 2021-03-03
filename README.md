@@ -5,6 +5,12 @@
 wget https://dl.influxdata.com/influxdb/releases/influxdb2_2.0.3_amd64.deb
 sudo dpkg -i influxdb2_2.0.3_amd64.deb
 ```
+## prerequisite
+```
+sudo apt-get install python3
+sudo apt-get install pip3
+```
+
 ## Send Data
 ### with CURL
 ```
